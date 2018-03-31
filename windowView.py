@@ -206,8 +206,8 @@ def create_screen_capture(img,detections,w,h):
                             # for example C:/UserName/Desktop/test/
     base_file_name = now.strftime(
         "%Y-%m-%d_%H%M")  # create file name base for screenshot and annotation file, this could be set to the current data/time
-    image_directory = output_directory + "images/"
-    label_directory = output_directory + "labels/"
+    image_directory = output_directory + "/images/"
+    label_directory = output_directory + "/labels/"
     if not os.path.exists(image_directory):
         os.makedirs(image_directory)
     cv2.imwrite(image_directory + base_file_name + ".jpg", img)
